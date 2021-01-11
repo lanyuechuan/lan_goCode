@@ -1,3 +1,0 @@
-github.com/beego/bee/v2/cmd/commands/run/*.go:S1024
-github.com/beego/bee/v2/cmd/commands/dlv/*.go:S1024
-github.com/beego/bee/v2/utils/*.go:S1026
