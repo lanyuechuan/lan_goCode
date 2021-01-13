@@ -2,3 +2,5 @@
 /bin
 *.mod
 *.sum
+/.vscode
+# !.vscode/tasks.json    强制添加忽略文件夹中的特定文件
