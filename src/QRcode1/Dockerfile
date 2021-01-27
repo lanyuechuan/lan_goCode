@@ -1,6 +1,6 @@
-FROM centos:latest
+FROM golang
 MAINTAINER lan
 WORKDIR /go/src
 COPY . .
-ENTRYPOINT ["./QRcode1"]
 EXPOSE 8003
+CMD ["/bin/bash", "/go/src/QRcode1/script/build.sh"]

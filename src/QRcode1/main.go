@@ -47,6 +47,6 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{"url_code":url_code, "status":"200"})
 	})
 	// 3.监听端口，默认在8080。Run("里面不指定端口号默认为8080")
-	r.Run(":8005")
+	r.Run(":8003")
 
 }
