@@ -1,6 +1,5 @@
 # lan_goCode
 Submitting go code every day is a gesture,only persistence.
-近期goland激活码过期，总结成此文，希望对大家在切换到vscode来编写go代码有点微小的帮助。
 
 一、VsCode Go的正确安装方式
 1、先从扩展管理中安装Go插件
