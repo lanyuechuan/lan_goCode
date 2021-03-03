@@ -15,7 +15,7 @@ func NewUser(conn net.Conn) *User {
 	user := &User {
 		Name: userAddr,
 		Addr: userAddr,
-		conn: make(chan string),
+		C: make(chan string),
 		conn: conn,
 	}
 

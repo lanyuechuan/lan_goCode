@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net"
+	"sync"
 )
 
 
@@ -16,14 +17,15 @@ type Server struct {
 
 	//消息广播的channel
 	Message chan string
+}
 
 //创建一个server的API
-func NewServer(ip string, port int) *Server{
+func NewServer(ip string, port int) *Server {
 	server := &Server{
 		Ip : ip,
 		Port : port,
 		OnlineMap: make(map[string]*User),
-		Message: make(chan string)
+		Message: make(chan string),
 	}
 	return server
 }
