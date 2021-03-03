@@ -11,7 +11,7 @@ type Server struct {
 	Port int
 }
 
-//创建一个server的接口
+//创建一个server的API
 func NewServer(ip string, port int) *Server{
 	server := &Server{
 		Ip : ip,
@@ -25,7 +25,7 @@ func (this *Server) Handler(conn net.Conn) {
 	fmt.Println("连接建立成功")
 }
 
-//启动服务器的接口
+//启动服务器的API
 func (this *Server) Start() {
 	//socket listen
 	listener, err := net.Listen("tcp", fmt.Sprintf("%s:%d",this.Ip, this.Port))
