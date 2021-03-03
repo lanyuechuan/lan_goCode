@@ -2,8 +2,11 @@ package main
 
 import "fmt"
 
+
+//
 func a(mySlice []int) {
 	mySlice[0] = 2
+	fmt.Println(mySlice)
 }
 
 func main() {
@@ -11,8 +14,7 @@ func main() {
 	// myArray := []int{0,0}
 	myArray := make([]int, 3)
 	//动态数组容量增加和截取
-	//如果你不指定cap(容量)，默认容量的基数就是长度，容量是以基数为基准，成倍增加
-	myArray = append(myArray, 1)
+	//如果你不指定cap(容量)，默认容量的基数就是长度，容量是以长度基数为基准，成倍增加
 	for i := 0; i < 19; i ++ {
 		myArray = append(myArray, 1)
 	}

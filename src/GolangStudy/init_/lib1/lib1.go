@@ -3,9 +3,9 @@ package lib1
 import "fmt"
 
 func Lib() {
-	fmt.Println("lib1的Lib")
+	fmt.Println("我是lib1的Lib")
 }
 
 func init() {
-	fmt.Println("lib1 的 init")
+	fmt.Println("我是lib1 的 init")
 }
